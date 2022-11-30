@@ -27,4 +27,4 @@ app.get('/output', async ({}, res) => {
     res.send(bodies);
 });
 
-app.listen(5000, () => console.log('Express server listening on port ' + 5000));
+app.listen(process.env.PORT, () => console.log('Express server listening on port ' + process.env.PORT));
